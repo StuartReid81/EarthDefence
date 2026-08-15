@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EarthDefence.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50ae6b146b40e89dd112f5eebe9f6e93098388a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdcbb65efd46faa295c2ecbb908fa59578d11f14")]
 [assembly: System.Reflection.AssemblyProductAttribute("EarthDefence.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EarthDefence.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

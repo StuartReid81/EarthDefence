@@ -6,6 +6,21 @@ using EarthDefence.Infra.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazorApp", policy =>
+    {
+        policy.WithOrigins(
+                "http://localhost:5000",
+                "https://localhost:5001",
+                "http://localhost:5200",
+                "https://localhost:7200"
+              )
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddSingleton(sp =>
 {
     var connectionString = builder.Configuration["CosmosDb:ConnectionString"];
@@ -23,6 +38,8 @@ builder.Services.AddScoped<IPlayerRepo, CosmosPlayerRepo>();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+app.UseCors("AllowBlazorApp");
 
 if (app.Environment.IsDevelopment())
 {
