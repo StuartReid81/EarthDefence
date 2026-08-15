@@ -4,12 +4,13 @@
 **/publish/
 .vs/
 .vscode/
-appsettings.Development.json
+*.user
+*.userosscache
+*.sln.docstates
 
 # Environment / Secret Files
-appsettings.Development.json
-appsettings.Local.json
-*.user
+**/appsettings.Development.json
+**/appsettings.Local.json
 
 # Operating System Files
 .DS_Store
