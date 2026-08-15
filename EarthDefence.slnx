@@ -1,4 +1,4 @@
 <Solution>
+  <Project Path="EarthDefence.Api/EarthDefence.Api.csproj" />
   <Project Path="EarthDefence.Shared/EarthDefence.Shared.csproj" />
-  <Project Path="EarthDefence/EarthDefence.csproj" />
 </Solution>
