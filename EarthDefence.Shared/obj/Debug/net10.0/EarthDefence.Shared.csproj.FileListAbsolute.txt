@@ -1,0 +1,11 @@
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\bin\Debug\net10.0\EarthDefence.Shared.deps.json
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\bin\Debug\net10.0\EarthDefence.Shared.dll
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\bin\Debug\net10.0\EarthDefence.Shared.pdb
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\EarthDefence.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\EarthDefence.Shared.AssemblyInfoInputs.cache
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\EarthDefence.Shared.AssemblyInfo.cs
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\EarthDefence.Shared.csproj.CoreCompileInputs.cache
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\EarthDefence.Shared.dll
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\refint\EarthDefence.Shared.dll
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\EarthDefence.Shared.pdb
+C:\Users\angel\Desktop\Dev\EarthDefence\EarthDefence.Shared\obj\Debug\net10.0\ref\EarthDefence.Shared.dll

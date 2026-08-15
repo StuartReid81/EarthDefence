@@ -1,0 +1,16 @@
+# Build and Output Folders
+**/bin/
+**/obj/
+**/publish/
+.vs/
+.vscode/
+appsettings.Development.json
+
+# Environment / Secret Files
+appsettings.Development.json
+appsettings.Local.json
+*.user
+
+# Operating System Files
+.DS_Store
+Thumbs.db
