@@ -15,6 +15,9 @@ namespace EarthDefence.Shared.Models
         public Currencies Currencies { get; set; } = new();
         public ActiveTaskState? ActiveTask { get; set; }
         public List<PlayerTask> RecentTasks { get; set; } = [];
+        public int Intel { get; set; }
+        public int Credits { get; set; }
+        public int Reputation { get; set; }
 
         public void AddToRecentTasks(PlayerTask task, int maxHistory = 10)
         {

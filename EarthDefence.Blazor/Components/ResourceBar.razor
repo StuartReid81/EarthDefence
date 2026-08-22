@@ -1,0 +1,53 @@
+@using EarthDefence.Shared.Models
+
+<div class="dossier-bar">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs md:text-sm">
+        
+        <!-- Left: Classification Banner & Dossier ID -->
+        <div class="flex items-center space-x-3">
+            <span class="dossier-badge-classified">
+                CLASSIFIED // TOP SECRET
+            </span>
+            <div class="flex items-center space-x-1 text-slate-400">
+                <span class="text-slate-500">DOSSIER:</span>
+                <span class="text-dossier-amber font-semibold tracking-wider">
+                    @(Player?.Id ?? "UNKNOWN_AGENT")
+                </span>
+            </div>
+        </div>
+
+        <!-- Center: Radar Operational Pulse -->
+        <div class="hidden sm:flex items-center space-x-2 text-slate-400 text-xs">
+            <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            </span>
+            <span class="tracking-widest uppercase text-slate-400 font-mono">TELEMETRY: LINK ACTIVE</span>
+        </div>
+
+        <!-- Right: Telemetry Counters (Budget & Intel) -->
+        <div class="flex items-center space-x-6">
+            <!-- Operational Budget (Credits) -->
+            <div class="dossier-stat-box">
+                <span class="text-slate-500 text-xs uppercase">BUDGET:</span>
+                <span class="text-emerald-400 font-bold text-sm tracking-wider">
+                    $@(Player?.Credits.ToString("N0") ?? "0")
+                </span>
+            </div>
+
+            <!-- Field Data (Intel) -->
+            <div class="dossier-stat-box">
+                <span class="text-slate-500 text-xs uppercase">INTEL:</span>
+                <span class="text-dossier-amber font-bold text-sm tracking-wider">
+                    @(Player?.Intel.ToString("N0") ?? "0") <span class="text-[10px] text-slate-400">PTS</span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public PlayerState? Player { get; set; }
+}

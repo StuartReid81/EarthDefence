@@ -1,16 +1,28 @@
 ﻿@inherits LayoutComponentBase
+@using EarthDefence.Blazor.Components
+@using EarthDefence.Shared.Models
+
 <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+        <ResourceBar Player="CurrentPlayer" />
 
         <article class="content px-4">
             @Body
         </article>
     </main>
 </div>
+
+@code {
+    // Placeholder player data until live API calls are wired up
+    private PlayerState? CurrentPlayer = new PlayerState 
+    { 
+        Id = "AGENT-709", 
+        Credits = 0, 
+        Intel = 1,
+        Reputation = 1
+    };
+}

@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --color-dossier-bg: #121518;
+  --color-dossier-card: #1a1f24;
+  --color-dossier-amber: #DDA15E;
+}
+
+/* Reusable Telemetry Header Bar */
+.dossier-bar {
+  @apply w-full bg-dossier-bg border-b-2 border-dossier-amber/40 text-dossier-amber font-mono p-3 shadow-lg select-none;
+}
+
+/* Classified Header Tag */
+.dossier-badge-classified {
+  @apply bg-dossier-amber text-dossier-bg font-bold px-2 py-0.5 tracking-widest uppercase text-xs animate-pulse;
+}
+
+/* Telemetry Stat Cards */
+.dossier-stat-box {
+  @apply flex items-center space-x-2 bg-dossier-card px-3 py-1 border border-dossier-amber/30 rounded-sm;
+}
